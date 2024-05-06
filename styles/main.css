@@ -10,8 +10,8 @@ body {
     height: 30%;
     background: rgba(170, 213, 118, 1);
 }
-
-#main-content {
+#main-content{
+    background: rgba(0,0,0, .5);
 }
 #links-wrapper {
     width: 100%;
@@ -23,7 +23,10 @@ body {
     -moz-box-shadow: 0px 0px 64px -11px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 0px 64px -11px rgba(0, 0, 0, 0.75);
     border-radius: 3px;
-    transform: translateY(5rem);
+}
+
+#links-wrapper img {
+    filter: drop-shadow(0px 0px 6px rgba(0,0,0, .4))
 }
 
 #bg-vid {
@@ -33,8 +36,16 @@ body {
     position: fixed;
     z-index: -1;
     margin: 0 auto;
+    opacity: 0.5;
 }
-
+#logo {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    padding: 3rem 0;
+    filter: drop-shadow(0px 0px 10px rgba(0,0,0, .5))
+}
 #links-wrapper .header {
     font-size: 3rem;
     text-align: center;
