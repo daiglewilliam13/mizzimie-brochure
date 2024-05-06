@@ -43,8 +43,24 @@ body {
 
 .social-link {
     display: flex;
+    padding: 2rem 0;
+    border-bottom: 1px solid rgba(0,0,0, .5);
+    padding-left: 2rem;
+}
+
+.desc {
+    flex-grow: 2;
 }
 
 .desc p {
     margin: 0;
+    padding-left: 1rem;
+}
+
+.title {
+    font-size: 1.2rem;
+}
+
+.handle {
+    color: rgba(0,0,0, .5)
 }
