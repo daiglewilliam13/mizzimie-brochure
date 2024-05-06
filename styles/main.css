@@ -27,10 +27,24 @@ body {
 #links-wrapper .header {
     font-size: 3rem;
     text-align: center;
-    padding: 1rem 0;
+    padding: 3rem 0;
     background: rgba(26, 67, 1, 1);
     color: white;
     -moz-border-radius: 0px;
     -webkit-border-radius: 3px 3px 0px 0px;
     border-radius: 3px 3px 0px 0px;
+    margin: 0;
+}
+
+#links-wrapper a, #links-wrapper a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.social-link {
+    display: flex;
+}
+
+.desc p {
+    margin: 0;
 }
