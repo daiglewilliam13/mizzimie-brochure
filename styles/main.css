@@ -11,6 +11,8 @@ body {
     background: rgba(170, 213, 118, 1);
 }
 
+#main-content {
+}
 #links-wrapper {
     width: 100%;
     max-width: 900px;
@@ -30,6 +32,7 @@ body {
     object-fit: cover;
     position: fixed;
     z-index: -1;
+    margin: 0 auto;
 }
 
 #links-wrapper .header {
