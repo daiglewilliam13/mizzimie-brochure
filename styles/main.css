@@ -6,6 +6,7 @@ body {
     width: 100%;
 }
 
+
 #hero {
     height: 30%;
     background: rgba(170, 213, 118, 1);
@@ -36,8 +37,8 @@ body {
     position: fixed;
     z-index: -1;
     margin: 0 auto;
-    opacity: 0.5;
 }
+
 #logo {
     margin: 0 auto;
     width: 100%;
