@@ -4,18 +4,16 @@ let sourceUrl = document.referrer;
 
 // https://l.instagram.com/
 
-let twitterUrl = "https://onlyfans.com/mizzimie/c4";
+let twitterUrl = "https://onlyfans.com/mizzivip/c3";
 
-let igUrl = "https://onlyfans.com/mizzimie/c3";
-
-let tiktokUrl = "https://onlyfans.com/mizzimie/c2";
+let igUrl = "https://onlyfans.com/mizzivip/c1";
 
 let ofLink = document.getElementById('of');
 
-console.log(ofLink);
 const changeLink = (el, newUrl) => {
     el.href=newUrl;
 }
+
 let params = new URLSearchParams(document.location.search);
 let ref = params.get('ref');
 
