@@ -4,15 +4,15 @@ let sourceUrl = document.referrer;
 
 // https://l.instagram.com/
 
-let twitterUrl = "https://onlyfans.com/mizzivip/c3";
 
-let igUrl = "https://onlyfans.com/mizzivip/c1";
+let twitterUrl = "aHR0cHM6Ly9vbmx5ZmFucy5jb20vbWl6eml2aXAvYzM="; //c3
 
-let ofLink = document.getElementById('of');
+let igUrl = "aHR0cHM6Ly9vbmx5ZmFucy5jb20vbWl6eml2aXAvYzE="; //c1
 
-const changeLink = (el, newUrl) => {
-    el.href=newUrl;
-}
+let baseUrl = 'aHR0cHM6Ly9vbmx5ZmFucy5jb20vbWl6eml2aXAvYzQ=' //c4
+
+let link = document.getElementById('of');
+
 
 let params = new URLSearchParams(document.location.search);
 let ref = params.get('ref');
@@ -33,11 +33,14 @@ const checkRef = (urlRef) => {
     }
 }
 
+link.addEventListener('click', (e) => {
+
 if (sourceUrl == "https://l.instagram.com/") {
     console.log('Source is from instagram: ', sourceUrl );
-    changeLink(ofLink, igUrl);
+    window.location.href = atob(igUrl);
 } else if (sourceUrl == "") {
     console.log('referrer blank, checking URL parameters');
-    checkRef(ref);
+    window.location.href = atob(baseUrl);
 }
 
+});
