@@ -41,6 +41,9 @@ if (sourceUrl == "https://l.instagram.com/") {
 } else if (sourceUrl == "") {
     console.log('referrer blank, checking URL parameters');
     window.location.href = atob(baseUrl);
+} else {
+    console.log('error: no source found');
+    window.location.href = atob(baseUrl);
 }
 
 });
